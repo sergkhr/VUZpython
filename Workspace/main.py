@@ -2,6 +2,9 @@ import math
 import tkinter as tk
 
 
+c = 40 # number of cells in noise
+
+
 def pyshader(func, w, h):
     scr = bytearray((0, 0, 0) * w * h)
     for y in range(h):
@@ -22,13 +25,40 @@ def func(x, y):
     # resred = ((0.15 < rred < 0.3) * math.sin((rred - 0.3) * math.pi / -0.3)) or rred < 0.15
     # return resred, resgreen, 0
 
-    c = 20
+
+    n = val_noise(x, y)
+    return n, n, n
+
+
+def smoothstep(edge1, edge2, x):
+    t = max(min((x - edge1) / (edge2 - edge1), 1.0), 0.0)
+    return t * t * (3.0 - 2.0 * t)
+
+
+def noise(x, y):
     x = (int(x * c) + 1) / c
     y = (int(y * c) + 1) / c
-    res = x*63876 - y*572123
+    res = x * 63876 - y * 572123
     res *= res * res * res
     n = math.cos(res) + math.sin(res)
-    return n, n, n
+    return n
+
+
+def val_noise(x, y):
+    #use linear interpolation
+    x0 = int(x * c)
+    x1 = (x0 + 1)
+    y0 = int(y * c)
+    y1 = (y0 + 1)
+    x0 /= c
+    x1 /= c
+    y0 /= c
+    y1 /= c
+    smoothX = smoothstep(x0, x1, x)
+    smoothY = smoothstep(y0, y1, y)
+    n = (smoothX) * (smoothY)
+    return n
+
 
 
 
