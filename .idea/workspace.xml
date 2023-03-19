@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Current File" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecfe67af-0d8b-4ff5-9467-318ffdd1affa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workspace/.idea/Workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Workspace/.idea/Workspace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workspace/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Workspace/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workspace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Workspace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Workspace/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Workspace/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workspace/seventh.py" beforeDir="false" afterPath="$PROJECT_DIR$/Workspace/seventh.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "D:/Sergey_Khrechko/VUZpython",
+    "run.code.analysis.last.selected.profile": "aDefault",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
