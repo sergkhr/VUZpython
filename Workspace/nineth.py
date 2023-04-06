@@ -6,6 +6,14 @@ def main(table):
             res.append(i)
     # remove duplicate rows using set on tuples preserving order
     # turn inner lists into tuples
+
+    # try using fromkeys on a dictionary... dictionary has O(1) lookup time and O(1) insertion time so it should be
+    # faster than a set and it can act as a set, because of fromkeys, that generates a dictionary of key:none (where)
+    # key is the element in the list and none is the value of the key
+
+    # also use zi to transpose the list of lists into a list of tuples, use * to unpack the list of tuples into
+    # a list of arguments for the zip function, then use list to turn the zip object into a list of tuples
+
     for i in range(len(res)):
         res[i] = tuple(res[i])
     temp_set = set()
