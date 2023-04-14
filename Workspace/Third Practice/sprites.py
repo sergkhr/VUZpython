@@ -56,7 +56,7 @@ def create_colorful_sprites(n):
 # sprites = create_one_sprite()
 # sprites = create_sprites(80)
 # sprites = create_one_colorful_sprite(3)
-sprites = create_colorful_sprites(80)
+sprites = create_colorful_sprites(30)
 
 plt.imshow(sprites, cmap='gray')
 plt.show()
